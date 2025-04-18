@@ -1,3 +1,6 @@
+# QuestionModel class contains the question and answer structure
+# Quizbrain models the quiz to ask all the questions in 'data'. checks answer and keeps score
+
 from question_model import QuestionModel
 from data import question_data
 from quiz_brain import QuizBrain
@@ -13,7 +16,7 @@ for i in range(len(question_data)):
     # print(newQ.question)
     # print(newQ.answer)
     # print("----------")
-#
+
 newQuiz = QuizBrain(question_bank)
 
 while newQuiz.still_has_questions():
